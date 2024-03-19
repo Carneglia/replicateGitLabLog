@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "regular";
+    src: url(../recourses/tipografy/applied-sans-pro-cufonfonts/AppliedSansProRg.TTF);
+}
+
+@font-face {
+    font-family: "medium";
+    src: url(../recourses/tipografy/applied-sans-pro-cufonfonts/AppliedSansProMedium.TTF);
+}
+
+%a {
+    text-decoration: none;
+    color: #1f75cb;
+    cursor: pointer;
+}
+
+%box {
+    width: 100%;
+    padding: 0.45rem 0;
+    border-radius: 4px;
+    border: 1px solid;
+    margin: 0.4rem auto;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "regular";
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    line-height: 1.5;
+    color: #333238;
+    font-size: 0.875rem;
+
+    header {
+        text-align: center;
+
+        img {
+            height: 3.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        h1 {
+            margin-bottom: 0.8rem;
+            font-size: 1.187rem;
+            font-weight: 600;
+
+        }
+    }
+
+    .main-container {
+        max-width: 380px;
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: start;
+
+            p {
+
+                margin: 0.4rem 0;
+
+                a {
+                    @extend %a
+                }
+            }
+
+            .div-user {
+                text-align: left;
+
+                label {
+                    margin-top: 10px;
+                    margin-bottom: 0.5rem;
+                    font-weight: 600;
+                }
+
+                input {
+                    @extend %box;
+                    padding: 0.3rem 0.8rem;
+                    border: 2px solid #b5b4b8;
+                    outline-color: #1f75cb;
+                }
+
+                p {
+                    text-align: right;
+
+                    a {
+                        @extend %a
+                    }
+                }
+
+                .input-box {
+                    @extend %box;
+                    display: flex;
+                    align-items: center;
+                    border: 2px solid #b5b4b8;
+                    padding: 0;
+                    height: 1.9rem;
+
+
+                    input {
+                        width: 90%;
+                        border: none;
+                        padding: 1px 6px;
+                        outline: none;
+
+                    }
+
+                    .show-pass {
+                        width: 1.5rem;
+                        height: 1.3rem;
+                        padding-right: 0.5rem;
+                    }
+                }
+
+                .input-box:hover {
+                    border-color: #1f75cb;
+                    ;
+                }
+            }
+
+            .check-container {
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                input {
+                    margin-right: 0.3rem;
+                    border: 2px solid #b5b4b8;
+                    height: 0.8rem;
+                    width: 0.8rem;
+                    border-radius: 5px;
+                }
+            }
+
+            button {
+                @extend %box;
+                font-size: 0.8rem;
+                color: white;
+                background-color: #1f75cb;
+                border: 1px solid #1f75cb;
+            }
+        }
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+
+        .footer-container {
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             padding-top: 1rem;
+             margin: 0 10rem;
+
+
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                list-style-type: none;
+
+                a {
+                    @extend %a
+                }
+
+                .languages {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 1rem;
+                    }
+
+                    p {
+                        margin-left: 0.2rem;
+                    }
+
+                    button {
+                        border: none;
+                        background: none;
+                        margin-left: 0.3rem;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        max-width: 400px;
+    }
+}
