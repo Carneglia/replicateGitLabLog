@@ -100,6 +100,9 @@ body {
         background-color: #1f75cb;
         border: 1px solid #1f75cb;
         cursor: pointer; }
+      body .main-container section button:hover {
+        background-color: #1868b8;
+        border: 1px solid #1868b8; }
   body footer {
     position: absolute;
     bottom: 0;
