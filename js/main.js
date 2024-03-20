@@ -1,7 +1,7 @@
 let eyeEl = document.getElementById("eye-el");
 let pass = document.getElementById("password");
 
-function changeValue(){
+eyeEl.onclick = function changeValue(){
     if (pass.type === "password"){
         pass.type = "text";
         eyeEl.src = "../recourses/images/eye.png"
