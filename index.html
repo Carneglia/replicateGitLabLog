@@ -16,19 +16,19 @@
     <main class="main-container">
         <section>
             <div class="div-user">
-                <label>Nom d'utilisateur ou adresse de coirriel principale</label>
-                <input type="text">
-                <label>Mot de passe</label>
+                <label for="user">Nom d'utilisateur ou adresse de coirriel principale</label>
+                <input id="user" type="text">
+                <label for="password">Mot de passe</label>
                 <div class="input-box">
                     <input id="password" type="password">
-                    <img class="show-pass" src="./recourses/images/eye.png"
+                    <img onclick="changeValue()" id="eye-el" class="show-pass" src="./recourses/images/hide.png"
                         alt="Imagen de un Ojo, que presionando en él, hace visible la contraseña">
                 </div>
 
                 <p><a href="#" target="_blank">Mot de passe oublié ?</a></p>
             </div>
             <div class="check-container">
-                <input type="checkbox">
+                <input id="checkbox" type="checkbox">
                 <p>Se souvenir de moi</p>
             </div>
             <button>Connexion</button>
@@ -58,6 +58,7 @@
             </ul>
         </section>
     </footer>
+    <script src=".//js/main.js"></script>
 </body>
 
 </html>
