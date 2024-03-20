@@ -6,12 +6,12 @@
   font-family: "medium";
   src: url(../recourses/tipografy/applied-sans-pro-cufonfonts/AppliedSansProMedium.TTF); }
 
-body header a, body .main-container section p a, body .main-container section .div-user p a, body footer .footer-container ul a {
+body header a, body .main-container section p a, body .main-container section .form-user p a, body footer .footer-container ul a {
   text-decoration: none;
   color: #1f75cb;
   cursor: pointer; }
 
-body .main-container section .div-user input, body .main-container section .div-user .input-box, body .main-container section button {
+body .main-container section .form-user input, body .main-container section .form-user .input-box, body .main-container section button {
   width: 100%;
   padding: 0.45rem 0;
   border-radius: 4px;
@@ -51,38 +51,38 @@ body {
       text-align: start; }
       body .main-container section p {
         margin: 0.4rem 0; }
-      body .main-container section .div-user {
+      body .main-container section .form-user {
         text-align: left; }
-        body .main-container section .div-user label {
+        body .main-container section .form-user label {
           margin-top: 10px;
           margin-bottom: 0.5rem;
           font-weight: 600; }
-        body .main-container section .div-user input {
+        body .main-container section .form-user input {
           padding: 0.3rem 0.8rem;
           border: 2px solid #b5b4b8;
           outline-color: #1f75cb; }
-        body .main-container section .div-user input:hover {
+        body .main-container section .form-user input:hover {
           border-color: #1f75cb; }
-        body .main-container section .div-user p {
+        body .main-container section .form-user p {
           text-align: right; }
-        body .main-container section .div-user .input-box {
+        body .main-container section .form-user .input-box {
           display: flex;
           align-items: center;
           border: 2px solid #b5b4b8;
           padding: 0;
           height: 1.9rem;
           outline-color: #1f75cb; }
-          body .main-container section .div-user .input-box input {
+          body .main-container section .form-user .input-box input {
             width: 90%;
             border: none;
             padding: 1px 6px;
             outline: none; }
-          body .main-container section .div-user .input-box .show-pass {
+          body .main-container section .form-user .input-box .show-pass {
             width: 1.5rem;
             height: 1.3rem;
             padding-right: 0.5rem;
             cursor: pointer; }
-        body .main-container section .div-user .input-box:hover {
+        body .main-container section .form-user .input-box:hover {
           border-color: #1f75cb; }
       body .main-container section .check-container {
         width: 100%;

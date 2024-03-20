@@ -15,7 +15,7 @@
     </header>
     <main class="main-container">
         <section>
-            <div class="div-user">
+            <form class="form-user">
                 <label for="user">Nom d'utilisateur ou adresse de coirriel principale</label>
                 <input id="user" type="text">
                 <label for="password">Mot de passe</label>
@@ -26,7 +26,7 @@
                 </div>
 
                 <p><a href="#" target="_blank">Mot de passe oublié ?</a></p>
-            </div>
+            </form>
             <div class="check-container">
                 <input id="checkbox" type="checkbox">
                 <p>Se souvenir de moi</p>
@@ -58,7 +58,25 @@
             </ul>
         </section>
     </footer>
-    <script src=".//js/main.js"></script>
+    <script >
+        let eyeEl = document.getElementById("eye-el");
+let pass = document.getElementById("password");
+
+eyeEl.onclick = function changeValue(){
+    if (pass.type === "password"){
+        pass.type = "text";
+        eyeEl.src = "./recourses/images/eye.png";
+        eyeEl.alt = "Imagen de un Ojo, que presionando en él, encripta la contraseña";  
+     
+    } else{
+        pass.type = "password";
+        eyeEl.src = "./recourses/images/hide.png";
+        eyeEl.alt = "Imagen de un Ojo, que presionando en él, revela la contraseña";
+    }
+}
+
+
+    </script>
 </body>
 
 </html>
